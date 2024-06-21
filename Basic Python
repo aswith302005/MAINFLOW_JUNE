@@ -1,0 +1,90 @@
+# Basic Python Syntax Overview
+
+# Variables and Data Types
+my_string = "Hello, World!"  # String
+my_int = 42  # Integer
+my_float = 3.14  # Float
+my_bool = True  # Boolean
+
+print(my_string, my_int, my_float, my_bool)
+
+# Lists
+my_list = [1, 2, 3, 4, 5]
+print(my_list)
+print(my_list[0])  # Accessing elements
+my_list.append(6)  # Adding elements
+print(my_list)
+
+# Tuples
+my_tuple = (1, 2, 3)
+print(my_tuple)
+print(my_tuple[1])  # Accessing elements
+
+# Dictionaries
+my_dict = {"name": "Alice", "age": 25}
+print(my_dict)
+print(my_dict["name"])  # Accessing values
+
+# Sets
+my_set = {1, 2, 3, 4, 5}
+print(my_set)
+
+# Control Structures
+# Conditional Statements
+if my_int > 10:
+    print("my_int is greater than 10")
+else:
+    print("my_int is not greater than 10")
+
+# Loops
+# For loop
+for i in range(5):
+    print(i)
+
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+# Functions
+def my_function(x):
+    return x * 2
+
+print(my_function(5))
+
+# Classes and Objects
+class Dog:
+    def _init_(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print("Woof!")
+
+my_dog = Dog("Buddy", 3)
+print(my_dog.name)
+my_dog.bark()
+
+# Exception Handling
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+
+# List Comprehensions
+squares = [x**2 for x in range(10)]
+print(squares)
+
+# File I/O
+with open("example.txt", "w") as file:
+    file.write("Hello, file!")
+
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+# Modules and Imports
+import math
+
+print(math.sqrt(16))
